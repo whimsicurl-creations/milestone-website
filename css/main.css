@@ -1,0 +1,160 @@
+/***** BASE STYLES *****/
+body {
+    font-family: 'Andika';
+    color: #095256;
+    font-size: 18px;
+}
+
+/***** GRID *****/
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+.half-width {
+    width: 600px;
+    float: left;
+}
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/***** NAV BAR *****/
+nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid 4px darkgray;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Mountains of Christmas";
+    font-size: 24px;
+    font-weight: 700;
+    color: #095256;
+    padding-left: 125px;
+}
+
+/***** HEADER *****/
+header {
+    height: 800px;
+    background: url('../img/hero-image.png');
+    background-size: cover;
+}
+header h1 {
+    font-family: 'Amatic SC';
+    color: #67bf09;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    padding-top: 340px;
+}
+header h2 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+/***** PORTFOLIO *****/
+#portfolio {
+    background: white;
+    height: 1300px;
+}
+#portfolio h2 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+.portfolio-text {
+    height: 350px;
+    padding: 25px;
+    margin: 5px;
+}
+img {
+    margin: 25px;
+    border: solid 2px #a6c8c1;
+}
+h3 {
+    font-family: 'Mountains of Christmas';
+    font-size: 32px;
+}
+
+/***** ABOUT *****/
+#about {
+    background: #087e8b;
+    height: 525px;
+}
+#about h2 {
+    font-family: 'Mountains of Christmas';
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 25px;
+}
+#about h3 {
+    color: #a6c8c1;
+    padding-top: 45px;
+    padding-left: 25px;
+}
+#about p {
+    padding-left: 25px;
+    color: white;
+}
+
+/***** CONTACT *****/
+#contact {
+    height: 450px;
+    background: #095156;
+}
+#contact h2 {
+    font-family: 'Mountains of Christmas';
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+    padding-top: 25px;
+}
+#contact h3 {
+    color: white;
+    text-align: center;
+}
+#contact h4 {
+    color: white;
+    text-align: center;
+}
+#contact a {
+    text-decoration: underline;
+    color: white;
+}
+.table {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+    margin: auto;
+}
+#contact li {
+    display: inline-block;
+}
+#contact li img {
+    border: none;
+    margin: 0 25px;
+}
+#contact p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    clear: both;
+    padding-top: 125px;
+}
