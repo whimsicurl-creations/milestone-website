@@ -81,7 +81,8 @@ header h1 {
 }
 img {
     margin: 25px;
-    border: solid 2px #a6c8c1;
+    border: solid 3px #a6c8c1;
+    border-radius: 10px;
 }
 h3 {
     font-family: 'Mountains of Christmas', cursive;
@@ -118,20 +119,20 @@ img#wc-logo {
     margin-right: 30%;
     padding-top: 45px;
 }
-/*#crafts h2 {
-    padding-top: 0;
-}*/
 #crafts p {
     text-align: center;
 }
 #crafts img.img-gallery {
     width: 200px;
-    border: none;
+    border: 7px solid #087e8b;
+    border-radius: 15%;
+    box-shadow: 7px 7px 7px grey;
 }
 #crafts div.container {
     display: block;
-    margin: auto;
-    width: 1025px;
+    padding-left: 16%;
+    /*margin: auto;
+    width: 1200px;*/
 }
 
 /***** CONTACT *****/
