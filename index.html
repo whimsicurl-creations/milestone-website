@@ -8,18 +8,28 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Andika" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700" rel="stylesheet">
+        <!-- Icon library to show hamburger menu on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
             <div class="full-width">
-                <nav>
-                    <ul>
+                <nav class="topnav" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="crafts/index.html">Crafts</a>
+                    <a href="#about>">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <!-- <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="crafts/index.html">Crafts</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
             <div class="full-width">
@@ -98,5 +108,15 @@
                 </div>
             </footer>
         </main>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </body>
 </html>

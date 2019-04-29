@@ -6,7 +6,7 @@ body {
 }
 h2 {
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 32px;
+    font-size: 1.778em;
     text-align: center;
     margin: 0 auto;
     padding-top: 25px;
@@ -14,44 +14,53 @@ h2 {
 
 /***** GRID *****/
 .full-width {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
 }
 .half-width {
-    width: 600px;
+    width: 43%;
+    margin: 0 1%;
     float: left;
 }
 .third-width {
-    width: 400px;
+    width: 33%;
     float: left;
 }
 .two-thirds-width {
-    width: 800px;
+    width: 67%;
     float: left;
 }
 
 /***** NAV BAR *****/
 nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
     background: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     border-bottom: solid 4px darkgray;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding: 0 15%;
+    z-index: 99;
 }
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
+nav a {
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 24px;
+    font-size: 1.333em;
     font-weight: 700;
     color: #095256;
-    padding-left: 50px;
+    padding: 5px 25px;
+}
+.topnav a:hover {
+    color: #67bf09;
+}
+.topnav .icon {
+    display: none;
 }
 
 /***** HEADER *****/
@@ -64,7 +73,7 @@ header h1 {
     font-family: 'Amatic SC';
     color: #67bf09;
     text-align: center;
-    font-size: 60px;
+    font-size: 3.333em;
     font-weight: bolder;
     padding-top: 340px;
 }
@@ -81,12 +90,14 @@ header h1 {
 }
 img {
     margin: 25px;
+    width: 100%;
+    max-width: 550px;
     border: solid 3px #a6c8c1;
     border-radius: 10px;
 }
 h3 {
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 32px;
+    font-size: 1.778em;
 }
 
 /***** ABOUT *****/
@@ -112,11 +123,21 @@ header#crafts-header {
     background: #087e8b;
     height: 325px;
 }
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 img#wc-logo {
-    display: inline;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     border: none;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 100%;
+    max-width: 500px;
+    /* margin-left: 33%;
+    margin-right: 33%; */
     padding-top: 45px;
 }
 #crafts p {
@@ -131,8 +152,6 @@ img#wc-logo {
 #crafts div.container {
     display: block;
     padding-left: 16%;
-    /*margin: auto;
-    width: 1200px;*/
 }
 
 /***** CONTACT *****/
@@ -172,11 +191,41 @@ img#wc-logo {
 #contact li img {
     border: none;
     margin: 0 25px;
+    max-width: 50px;
 }
 #contact p {
-    font-size: 14px;
+    font-size: 0.778em;
     color: white;
     text-align: center;
     clear: both;
     padding-top: 25px;
+}
+
+/* ================= MEDIA QUERIES =================== */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topnav.responsive {
+        position: relative;
+        width: 100%;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav {
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .topnav.responsive a {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: left;
+    }
 }
