@@ -17,31 +17,6 @@ h2 {
 }
 
 /***** GRID *****/
-/* .full-width {
-    width: 100%;
-    margin: auto;
-}
-.half-width {
-    width: 46%;
-    margin: 0 1%;
-    float: left;
-    border: solid 1px blue;
-}
-.third-width {
-    width: 33%;
-    float: left;
-}
-.two-thirds-width {
-    width: 67%;
-    float: left;
-}
-.content-wrapper {
-    width: 95%;
-    margin: auto;
-    border: solid 1px yellowgreen;
-    content: "";
-} */
-
 .full-width {
     width: 100%;
     display: flex;
@@ -126,22 +101,23 @@ header .full-width h2 {
 /***** PORTFOLIO *****/
 #portfolio {
     background: white;
-    /* height: 1300px; */
 }
 #portfolio .content-wrapper {
     flex-flow: row nowrap;
 }
 h3 {
+    width: 100%;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 1.778em;
 }
-.portfolio-text {
-    /* height: 350px; */
-    padding: 25px;
-    margin: 5px;
+h4 {
+    width: 100%;
 }
-img {
-    margin: 25px;
+.portfolio-text {
+    padding-left: 10px;
+}
+.portfolio-img img {
+    margin: 25px 0;
     width: 100%;
     max-width: 550px;
     border: solid 3px #a6c8c1;
@@ -151,7 +127,6 @@ img {
 /***** ABOUT *****/
 #about {
     background: #087e8b;
-    /* height: 525px; */
 }
 #about h2 {
     color: white;
