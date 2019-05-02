@@ -58,8 +58,40 @@ nav {
     padding: 0 15%;
     z-index: 99;
 }
-.topnav {
+.menu-content {
+    max-height: 0;
     overflow: hidden;
+}
+.collapsible-menu label {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #67bf09;
+    display: block;
+    cursor: pointer;
+    background: url('../img/menu.png') no-repeat left center;
+    background-size: 25px;
+    border: solid 1px orange;
+    padding: 10px 0 10px 50px;
+}
+.collapsible-menu label:hover {
+    color: #095256;
+}
+input#menu {
+    display: none;
+}
+input:checked +label {
+    background-image: url('../img/close.png');
+    background-size: 25px;
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* Toggle Effect */
+input:checked ~ .menu-content {
+    max-height: 100%;
 }
 .topnav a {
     text-align: center;
@@ -142,23 +174,26 @@ h4 {
 }
 
 /***** CRAFTS *****/
-header#crafts-header {
+/* header#crafts-header {
     width: 100%;
     background: #087e8b;
     height: 325px;
-}
+} */
 .logo-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: 100%;
+    background: #087e8b;
+    height: 325px;
 }
 img#wc-logo {
     border: none;
     z-index: 1;
     width: 100%;
     max-width: 500px;
-    padding-top: 45px;
+    /* padding-top: 45px; */
 }
 div.content-wrapper.crafts-about h2 {
     width: 100%;
