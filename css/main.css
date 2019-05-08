@@ -23,7 +23,6 @@ h2 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    border: solid 1px purple;
 }
 .half-width {
     width: 45%;
@@ -32,7 +31,6 @@ h2 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    border: solid 1px blue;
 }
 .content-wrapper {
     display: flex;
@@ -40,23 +38,15 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 0 2.5%;
-    border: solid 1px yellowgreen;
 }
 
 /***** NAV BAR *****/
-nav {
+.collapsible-menu {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     border-bottom: solid 4px darkgray;
-    padding: 0 15%;
-    z-index: 99;
 }
 .menu-content {
     max-height: 0;
@@ -67,16 +57,19 @@ nav {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
-    color: #67bf09;
-    display: block;
+    color: #095256;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     cursor: pointer;
-    background: url('../img/menu.png') no-repeat left center;
+    background: url('../img/menu.png') no-repeat;
+    background-position-x: calc(50% - 70px);
+    background-position-y: 40%;
     background-size: 25px;
-    border: solid 1px orange;
-    padding: 10px 0 10px 50px;
 }
 .collapsible-menu label:hover {
-    color: #095256;
+    color: #67bf09;
 }
 input#menu {
     display: none;
@@ -111,13 +104,19 @@ input:checked ~ .menu-content {
 }
 
 /***** HEADER *****/
-header .full-width .content-wrapper {
+#main-header {
+    width: 100%;
+}
+#hero{
     width: 100%;
     height: 800px;
+    margin: 0;
     background: url('../img/hero-image.png');
+    background-position: center;
     background-size: cover;
 }
 header h1 {
+    width: 100%;
     font-family: 'Amatic SC';
     color: #67bf09;
     text-align: center;
@@ -125,7 +124,7 @@ header h1 {
     font-weight: bolder;
     padding-top: 15%;
 }
-header .full-width h2 {
+header h2 {
     margin: 0;
     padding: 0 0 10% 0;
 }
@@ -172,13 +171,18 @@ h4 {
     padding-left: 25px;
     color: white;
 }
+#about img {
+    margin: 25px 0;
+    width: 100%;
+    max-width: 550px;
+    border: solid 3px #a6c8c1;
+    border-radius: 10px;
+}
 
 /***** CRAFTS *****/
-/* header#crafts-header {
+header#crafts-header {
     width: 100%;
-    background: #087e8b;
-    height: 325px;
-} */
+}
 .logo-wrapper {
     display: flex;
     justify-content: center;
@@ -193,7 +197,6 @@ img#wc-logo {
     z-index: 1;
     width: 100%;
     max-width: 500px;
-    /* padding-top: 45px; */
 }
 div.content-wrapper.crafts-about h2 {
     width: 100%;
@@ -206,10 +209,13 @@ div.content-wrapper.crafts-about h2 {
     border: 7px solid #087e8b;
     border-radius: 15%;
     box-shadow: 7px 7px 7px grey;
+    margin: 10px;
 }
 #crafts div.container {
-    display: block;
-    padding-left: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /***** CONTACT *****/

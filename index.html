@@ -12,8 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-            <div class="full-width collapsible-menu">
+        <header id="main-header">
+            <div class="collapsible-menu">
                 <input type="checkbox" id="menu">
                 <label for="menu">Menu</label>
                 <div class="menu-content topnav">
@@ -26,25 +26,10 @@
                     </ul>
                 </div>
             </div>
-            
-            <!-- <div class="full-width">
-                <nav class="topnav" id="myTopnav">
-                    <a href="index.html">Home</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="crafts/index.html">Crafts</a>
-                    <a href="#about>">About</a>
-                    <a href="#contact">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </nav>
-            </div> -->
-            <div class="full-width">
-                <div class="content-wrapper">
-                    <h1>Welcome! My name is Bethany.<br />
-                    I'm glad you stopped by!</h1>
-                    <h2>Coding may be technical, but that doesn't mean it should be boring!</h2>
-                </div>
+            <div class="content-wrapper" id="hero">
+                <h1>Welcome! My name is Bethany.<br />
+                I'm glad you stopped by!</h1>
+                <h2>Coding may be technical, but that doesn't mean it should be boring!</h2>
             </div>
         </header>
         <main>
@@ -121,7 +106,7 @@
                             <div class="table">
                                 <ul>
                                     <li><a href="https://github.com/whimsicurl-creations" target="_blank"><img src="img/github-logo.png" alt="GitHub"></a></li>
-                                    <li><a href="https://www.linkedin.com/in/bethany-meier-93b00b13/" target="_blank"><img src="img/linkedin-button.png" alt="LinkedIn"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/bethany-meier/" target="_blank"><img src="img/linkedin-button.png" alt="LinkedIn"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -137,15 +122,5 @@
                 </div>
             </footer>
         </main>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
     </body>
 </html>
