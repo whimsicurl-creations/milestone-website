@@ -47,9 +47,6 @@ h2 {
     top: 0;
     left: 0;
     background: white;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     border-bottom: solid 4px darkgray;
 }
 .menu-content {
@@ -179,7 +176,6 @@ header#crafts-header {
 }
 img#wc-logo {
     border: none;
-    z-index: 1;
     width: 100%;
     max-width: 500px;
 }
