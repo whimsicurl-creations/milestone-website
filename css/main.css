@@ -296,6 +296,11 @@ input:checked +label {
 .collapsible-menu ul {
     list-style-type: none;
     padding: 0;
+    flex-wrap: wrap;
+}
+.collapsible-menu ul li {
+    width: 100%;
+    text-align: center;
 }
 /* Toggle Effect */
 input:checked ~ .menu-content {
