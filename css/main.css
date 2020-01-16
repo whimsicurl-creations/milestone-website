@@ -1,6 +1,6 @@
 /***** BASE STYLES *****/
 body {
-    font-family: 'Andika';
+    font-family: 'Quicksand', sans-serif;
     color: #095256;
     font-size: 18px;
     display: flex;
@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 h2 {
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 1.778em;
     text-align: center;
     margin: 0 auto;
@@ -75,7 +75,7 @@ input#menu {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 1.333em;
     font-weight: 700;
     color: #095256;
@@ -99,16 +99,19 @@ input#menu {
 }
 header h1 {
     width: 100%;
-    font-family: 'Amatic SC';
+    font-family: 'Merriweather', serif;
     color: #67bf09;
     text-align: center;
-    font-size: 3.333em;
+    font-size: 2.5em;
     font-weight: bolder;
     padding-top: 15%;
 }
 header h2 {
     margin: 0;
     padding: 0 0 10% 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    max-width: 50%;
 }
 
 /***** PORTFOLIO *****/
@@ -120,7 +123,7 @@ header h2 {
 }
 h3 {
     width: 100%;
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 1.778em;
 }
 h4 {
@@ -140,6 +143,7 @@ h4 {
 /***** ABOUT *****/
 #about {
     background: #087e8b;
+    padding: 3em 0;
 }
 #about h2 {
     color: white;
@@ -268,7 +272,7 @@ footer .third-width {
     overflow: hidden;
 }
 .collapsible-menu label {
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
@@ -310,7 +314,7 @@ input:checked ~ .menu-content {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Merriweather', serif;
     font-size: 1.333em;
     font-weight: 700;
     color: #095256;
