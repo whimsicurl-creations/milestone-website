@@ -15,6 +15,9 @@ h2 {
     margin: 0 auto;
     padding-top: 25px;
 }
+p {
+    font-size: 1.15em;
+}
 
 /***** GRID *****/
 .full-width {
@@ -117,9 +120,19 @@ header h2 {
 /***** PORTFOLIO *****/
 #portfolio {
     background: white;
+    margin: 4em 3em;
 }
 #portfolio .content-wrapper {
     flex-flow: row nowrap;
+    margin: 0.75em 0;
+    max-width: 1200px;
+}
+#portfolio .content-wrapper:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+#portfolio h2 {
+    margin-bottom: 1em;
+    width: 100%;
 }
 h3 {
     width: 100%;
