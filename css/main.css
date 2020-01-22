@@ -198,9 +198,11 @@ img#wc-logo {
 }
 div.content-wrapper.crafts-about h2 {
     width: 100%;
+    margin: 2em 0 1em;
 }
 #crafts p {
     text-align: center;
+    margin: 1em auto 2em;
 }
 #crafts img.img-gallery {
     width: 200px;
@@ -214,6 +216,8 @@ div.content-wrapper.crafts-about h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    max-width: 1000px;
+    margin-bottom: 5em;
 }
 
 /***** CONTACT *****/
