@@ -202,7 +202,8 @@ div.content-wrapper.crafts-about h2 {
 }
 #crafts p {
     text-align: center;
-    margin: 1em auto 2em;
+    margin: 1em auto;
+    max-width: 850px;
 }
 #crafts img.img-gallery {
     width: 200px;
@@ -306,7 +307,7 @@ footer .third-width {
     background-size: 25px;
 }
 .collapsible-menu label:hover {
-    color: #67bf09;
+    color: #087e8b;
 }
 input#menu {
     display: none;
@@ -339,7 +340,7 @@ input:checked ~ .menu-content {
     padding: 5px 25px;
 }
 .topnav a:hover {
-    color: #67bf09;
+    color: #087e8b;
 }
 .topnav .icon {
     display: none;
@@ -350,7 +351,6 @@ input:checked ~ .menu-content {
 .topnav a.icon {
     float: right;
     display: block;
-    border: solid 1px purple;
 }
 .topnav.responsive {
     position: relative;
@@ -361,14 +361,12 @@ nav {
     width: 100%;
     max-width: 768px;
     padding: 0;
-    border: solid 1px blue;
 }
 .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
     width: 100%;
-    border: 1px solid yellowgreen;
 }
 .topnav.responsive a.icon {
     position: absolute;
