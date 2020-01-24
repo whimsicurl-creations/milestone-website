@@ -166,7 +166,6 @@ header h2 {
 
 /***** ABOUT *****/
 #about {
-    /* background: #65ad99; */
     background-image: url('../img/teal-bg-horizontal.jpg');
     background-size: cover;
     padding: 3em 0;
@@ -298,7 +297,7 @@ footer .third-width {
     justify-content: center;
     align-items: center;
     border-bottom: solid 2px #b08f26;
-    height: 51px;
+    line-height: 51px;
 }
 .menu-content {
     max-height: 0;
@@ -309,7 +308,7 @@ footer .third-width {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
-    color: #095256;
+    color: #32826c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,11 +316,11 @@ footer .third-width {
     cursor: pointer;
     background: url('../img/menu.png') no-repeat;
     background-position-x: calc(50% - 70px);
-    background-position-y: 40%;
+    background-position-y: 50%;
     background-size: 25px;
 }
 .collapsible-menu label:hover {
-    color: #087e8b;
+    color: #65ad99;
 }
 input#menu {
     display: none;
@@ -350,11 +349,11 @@ input:checked ~ .menu-content {
     font-family: 'Merriweather', serif;
     font-size: 1.333em;
     font-weight: 700;
-    color: #095256;
+    color: #32826c;
     padding: 5px 25px;
 }
 .topnav a:hover {
-    color: #087e8b;
+    color: #65ad99;
 }
 .topnav .icon {
     display: none;
