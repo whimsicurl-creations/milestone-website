@@ -174,12 +174,9 @@ header h2 {
     color: #fefefe;
 }
 #about h3 {
-    color: #32826c;
-    /* padding-top: 45px; */
-    padding-left: 25px;
+    color: #fefefe;
 }
 #about p {
-    padding-left: 25px;
     color: #fefefe;
 }
 #about img {
@@ -385,5 +382,22 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+#portfolio .content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#portfolio .content-wrapper:nth-of-type(even) {
+    flex-direction: column;
+}
+.content-wrapper .half-width {
+    width: 85%;
+}
+#about .content-wrapper .half-width {
+    width: 80%;
+}
+#about h3 {
+    text-align: center;
 }
 }
