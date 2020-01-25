@@ -1,4 +1,7 @@
 /***** BASE STYLES *****/
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Quicksand', sans-serif;
     color: #353d3a;
@@ -61,12 +64,10 @@ nav {
     right: .5em;
     z-index: 10;
 }
-
 nav ul {
     display: flex;
     margin-top: 0;
 }
-
 nav ul a {
     list-style-type: none;
     margin: -25px .5em 0;
@@ -81,20 +82,20 @@ nav ul a {
     padding-bottom: 25px;
     transition: all 0.2s ease;
 }
-
 nav ul a:nth-of-type(2) {
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 }
-
 nav ul a:hover {
     margin: 0 .5em;
     background: hsla(0,100%,100%,.85);
 }
-
 nav ul a {
     text-decoration: none;
     color: #2b2b2b;
     font-weight: 600;
+}
+#collapse-nav {
+    display: none;
 }
 /* .collapsible-menu {
     position: fixed;
@@ -153,7 +154,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 #logo {
     max-width: 250px;
     position: absolute;
@@ -161,22 +161,19 @@ header {
     left: 0;
     padding: 1em;
 }
-
 #header-text {
     border: solid 3px #b08f26;
-    padding: 3em 8em;
-    max-width: 70%;
+    padding: 2em 6em;
+    max-width: 70vw;
     justify-content: center;
     align-items: center;
     background-color: hsla(0,100%,100%,.3);
 }
-
 header h1 {
     margin-bottom: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
 }
-
 header h2 {
     max-width: 500px;
     font-weight: 600;
@@ -184,6 +181,7 @@ header h2 {
     font-family: 'Quicksand', sans-serif;
     color: #2b2b2b;
     font-size: 1.5em;
+    padding-top: 0;
 }
 /* #main-header {
     width: 100%;
@@ -358,7 +356,7 @@ footer .third-width {
 #contact i {
     font-size: 3.25em;
     color: #fefefe;
-    margin: 0 20px;
+    margin: 0 8px;
 }
 #contact p {
     font-size: 0.778em;
@@ -371,7 +369,7 @@ footer .third-width {
 /* ================= MEDIA QUERIES =================== */
 @media screen and (max-width: 768px) {
 /***** NAV BAR *****/
-.collapsible-menu {
+/* .collapsible-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -420,7 +418,7 @@ input:checked +label {
     text-align: center;
 }
 /* Toggle Effect */
-input:checked ~ .menu-content {
+/* input:checked ~ .menu-content {
     max-height: 100%;
 }
 .topnav a {
@@ -466,7 +464,7 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-}
+} */
 
 /* HEADER */
 #hero div {
@@ -474,11 +472,11 @@ nav {
 }
 header h1 {
     font-size: 1.5em;
-    max-width: 60%;
+    /* max-width: 60%; */
 }
 header h2 {
     font-size: 0.95em;
-    max-width: 60%;
+    /* max-width: 60%; */
 }
 
 /* PORTFOLIO */
@@ -506,4 +504,23 @@ header h2 {
     display: flex;
     flex-direction: column;
 }
+}
+
+@media screen and (max-width: 566px) {
+    #logo {
+        max-width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1em;
+    }
+    #header-text {
+        padding: 1em 3em;
+    }
+    #full-nav {
+        display: none;
+    }
+    #collapse-nav {
+        display: block;
+    }
 }
