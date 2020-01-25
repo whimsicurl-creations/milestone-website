@@ -55,7 +55,48 @@ p {
 }
 
 /***** NAV BAR *****/
-.collapsible-menu {
+nav {
+    position: absolute;
+    top: 0;
+    right: .5em;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 0;
+}
+
+nav ul a {
+    list-style-type: none;
+    margin: -25px .5em 0;
+    width: 100px;
+    height: 100px;
+    background: hsla(0,100%,100%,.6);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 25px;
+    transition: all 0.2s ease;
+}
+
+nav ul a:nth-of-type(2) {
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+}
+
+nav ul a:hover {
+    margin: 0 .5em;
+    background: hsla(0,100%,100%,.85);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+/* .collapsible-menu {
     position: fixed;
     width: 100%;
     top: 0;
@@ -101,7 +142,50 @@ input#menu {
 }
 
 /***** HEADER *****/
-#main-header {
+header {
+    background-image: url(../img/teal-bg-horizontal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    max-width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+}
+
+#header-text {
+    border: solid 3px #b08f26;
+    padding: 3em 8em;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0,100%,100%,.3);
+}
+
+header h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+header h2 {
+    max-width: 500px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: #2b2b2b;
+    font-size: 1.5em;
+}
+/* #main-header {
     width: 100%;
 }
 #hero{
@@ -135,7 +219,7 @@ header h2 {
     max-width: 65%;
     font-size: 1.25em;
     color: #353d3a;
-}
+} */ */
 
 /***** PORTFOLIO *****/
 #portfolio {
