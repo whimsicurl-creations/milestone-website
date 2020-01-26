@@ -535,8 +535,22 @@ header h2 {
         right: 0;
         width: 100vw;
         height: 100vh;
+        background-image: url('../img/teal-bg-horizontal.jpg');
+        background-size: cover;
         background-color: hsla(0,100%,100%,.95);
-        border: solid 1px red;
+    }
+    #slideout #close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        margin: 0.5em;
+        padding: 0.75em;
+        text-decoration: none;
+        color: #2b2b2b;
+    }
+    #slideout i {
+        font-size: 2em;
     }
     #slideout ul {
         height: 50%;
@@ -544,7 +558,9 @@ header h2 {
         justify-content: space-between;
         align-items: center;
         padding-left: 0;
-        border: solid 1px green;
+        background-color: hsla(0,100%,100%,.85);
+        padding: 2em 3em;
+        border: solid 2px #b08f26;
     }
     #slideout a {
         align-items: center;
@@ -559,7 +575,6 @@ header h2 {
         width: 100%;
         list-style-type: none;
         text-align: center;
-        border: solid 1px orange;
         font-size: 2em;
     }
 
