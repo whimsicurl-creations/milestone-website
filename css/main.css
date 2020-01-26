@@ -97,6 +97,9 @@ nav ul a {
 #collapse-nav {
     display: none;
 }
+#slideout {
+    display: none;
+}
 /* .collapsible-menu {
     position: fixed;
     width: 100%;
@@ -523,4 +526,41 @@ header h2 {
     #collapse-nav {
         display: block;
     }
+    #slideout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsla(0,100%,100%,.95);
+        border: solid 1px red;
+    }
+    #slideout ul {
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        border: solid 1px green;
+    }
+    #slideout a {
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        margin: 0;
+        padding: 10px;
+        clip-path: none;
+    }
+    #slideout ul li {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        border: solid 1px orange;
+        font-size: 2em;
+    }
+
 }
