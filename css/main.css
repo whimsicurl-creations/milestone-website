@@ -235,7 +235,7 @@ header h2 {
     flex-direction: row-reverse;
 }
 #portfolio h2 {
-    margin-bottom: 1em;
+    margin: 1em auto;
     width: 100%;
 }
 .portfolio-text {
@@ -532,12 +532,14 @@ header h2 {
         align-items: center;
         position: fixed;
         top: 0;
-        /* background-image: url('../img/teal-bg-horizontal.jpg'); */
-        /* background-size: cover; */
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../img/teal-bg-horizontal.jpg');
+        background-size: cover;
         transition: all .6s ease-in-out;
     }
     .offscreen {
-        right: -250px;
+        right: -100vw;
     }
     .onscreen {
         right: 0;
