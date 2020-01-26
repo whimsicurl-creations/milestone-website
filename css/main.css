@@ -532,18 +532,22 @@ header h2 {
         align-items: center;
         position: fixed;
         top: 0;
+        /* background-image: url('../img/teal-bg-horizontal.jpg'); */
+        /* background-size: cover; */
+        transition: all .6s ease-in-out;
+    }
+    .offscreen {
+        right: -250px;
+    }
+    .onscreen {
         right: 0;
-        width: 100vw;
-        height: 100vh;
-        background-image: url('../img/teal-bg-horizontal.jpg');
-        background-size: cover;
-        background-color: hsla(0,100%,100%,.95);
     }
     #slideout #close {
         position: absolute;
         top: 0;
         right: 0;
         width: auto;
+        z-index: 12;
         margin: 0.5em;
         padding: 0.75em;
         text-decoration: none;
@@ -553,14 +557,25 @@ header h2 {
         font-size: 2em;
     }
     #slideout ul {
-        height: 50%;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding-left: 0;
         background-color: hsla(0,100%,100%,.85);
-        padding: 2em 3em;
         border: solid 2px #b08f26;
+    }
+    #slideout ul li:first-of-type {
+        align-self: flex-end;
+        top: 0;
+        right: 0;
+        width: auto;
+        padding: 0;
+    }
+    #slideout ul li:last-of-type {
+        padding-bottom: 1em;
+    }
+    #slideout ul li a i {
+        font-size: 1em;
     }
     #slideout a {
         align-items: center;
@@ -575,7 +590,8 @@ header h2 {
         width: 100%;
         list-style-type: none;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
+        padding: 0.5em 2em;
     }
 
 }
