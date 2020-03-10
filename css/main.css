@@ -82,7 +82,7 @@ nav ul a {
     padding-bottom: 25px;
     transition: all 0.2s ease;
 }
-nav ul a:nth-of-type(2) {
+nav ul a:nth-of-type(2n + 1) {
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 }
 nav ul a:hover {

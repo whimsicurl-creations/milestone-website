@@ -12,20 +12,26 @@
         <script src="https://kit.fontawesome.com/f8f76b2390.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="main-header">
-            <div class="collapsible-menu">
-                <input type="checkbox" id="menu">
-                <label for="menu">Menu</label>
-                <div class="menu-content topnav">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#portfolio">Portfolio</a></li>
-                        <li><a href="../index.html#about">About</a></li>
-                        <li><a href="../index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav>
+            <ul id="full-nav">
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../index.html#portfolio"><li>Portfolio</li></a>
+                <a href="../index.html#about"><li>About</li></a>
+                <a href="../index.html#contact"><li>Contact</li></a>
+            </ul>
+            <ul id="collapse-nav">
+                <a href="#" id="slideout-toggle"><li>Menu</li></a>
+            </ul>
+            <div id="slideout" class="offscreen">
+                <ul id="sidebar-nav">
+                    <li><a href="#" id="slideout-close"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                    <li><a href="../index.html" id="homeLink">Home</a></li>
+                    <li><a href="../index.html#portfolio" id="portfolioLink">Portfolio</a></li>
+                    <li><a href="../index.html#about" id="aboutLink">About</a></li>
+                    <li><a href="../index.html#contact" id="contactLink">Contact</a></li>
+                </ul>
             </div>
-        </header>
+        </nav>
         <main>
             
         </main>
@@ -35,7 +41,7 @@
                 <div class="content-wrapper full-width">
                     <div class="third-width">
                         <h3>Hire me</h3>
-                        <h4>859-466-6256<br /><a href="mailto:blmeier@gmail.com">blmeier@gmail.com</a></h4>
+                        <h4><a href="mailto:blmeier@gmail.com">blmeier@gmail.com</a></h4>
                     </div>
                     <div class="third-width">
                         <h3>Follow Me</h3>
@@ -58,5 +64,6 @@
             </div>
         </footer>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>
