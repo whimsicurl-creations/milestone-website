@@ -21,6 +21,9 @@ body {
     align-items: center;
     background: var(--bgcolor);
 }
+main {
+    width: 100%;
+}
 h2 {
     font-family: 'Merriweather', serif;
     font-size: 1.778em;
@@ -178,6 +181,10 @@ header h2 {
     border: solid 3px var(--maincolorlt);
     border-radius: 10px;
 }
+#portfolio a.case-study-link {
+    color: var(--maincolor);
+    font-weight: bold;
+}
 
 /***** ABOUT *****/
 #about {
@@ -203,6 +210,7 @@ header h2 {
     padding-top: 3.5em;
     background: #095156;
     clear: both;
+    width: 100%;
 }
 #contact h2 {
     color: var(--bgcolor);
@@ -250,11 +258,14 @@ footer .third-width {
 }
 
 /***** CASE STUDIES PAGES *****/
-#second-page-nav ul a {
+#second-page-nav #full-nav a,
+#second-page-nav #collapse-nav a {
     background: rgba(176, 143, 38, 0.7);
 }
 .case-study-wrapper {
     max-width: 1200px;
+    margin: 20px auto;
+    margin-bottom: 50px;
 }
 #case-study-headline {
     background-image: url('../img/teal-bg-horizontal.jpg');
@@ -266,11 +277,11 @@ footer .third-width {
 }
 #case-study-headline h1 {
     font-family: 'Merriweather', serif;
-    padding-left: 30px;
+    padding-left: 10%;
     width: 75%;
 }
 .case-study-wrapper img {
-    border: 2px solid var(--bgcolor);
+    border: 2px solid var(--accentcolor);
     border-radius: 10px;
     max-width: 400px;
 }
@@ -287,16 +298,26 @@ footer .third-width {
     flex-direction: row-reverse;
 }
 .row:nth-of-type(3) {
-    justify-content: end;
+    justify-content: flex-start;
 }
 #mission-statement {
     width: 80%;
     margin: 0 auto;
     font-weight: bold;
-    color: 
+    color: var(--maincolor);
 }
 
 /* ================= MEDIA QUERIES =================== */
+@media screen and (max-width: 850px) {
+    .row,
+    .row:nth-of-type(2n + 7) {
+        flex-direction: column;
+    }
+    .row ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 768px) {
 /* HEADER */
 #hero div {
@@ -421,5 +442,9 @@ header h2 {
         text-align: center;
         font-size: 1.5em;
         padding: 0.5em 2em;
+    }
+    /* CASE STUDY PAGES */
+    .row img {
+        max-width: 300px;
     }
 }
