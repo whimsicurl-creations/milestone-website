@@ -5,6 +5,7 @@ let closeButton = document.getElementById('slideout-close');
 let portfolioLink = document.querySelector('#portfolioLink');
 let aboutLink = document.querySelector('#aboutLink');
 let contactLink = document.querySelector('#contactLink');
+let caseStudiesLink = document.querySelector('#caseStudiesLink');
 
 //show slideout menu when menu button is clicked
 toggleButton.addEventListener('click', function(e) {
@@ -20,6 +21,10 @@ closeButton.addEventListener('click', function(e) {
 
 //close menu when any link is clicked
 portfolioLink.addEventListener('click', function() {
+    menu.classList.remove('onscreen');
+});
+
+caseStudiesLink.addEventListener('click', function() {
     menu.classList.remove('onscreen');
 });
 

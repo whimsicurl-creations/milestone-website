@@ -279,13 +279,50 @@ footer .third-width {
     padding-top: 25px;
 }
 
+/***** CASE STUDIES HOME PAGE *****/
+#cs-subtitle {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.cs-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.cs-element {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-gap: 10px;
+}
+.cs-element h2,
+.cs-element h3,
+.cs-element p {
+    margin: 0;
+    padding: 0;
+}
+.cs-element h3 {
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    font-weight: 400;
+    text-align: center;
+}
+.cs-element a {
+    margin: 0 auto;
+}
+.cs-element a img {
+    max-width: 275px;
+    margin: 0 auto;
+}
+
 /***** CASE STUDIES PAGES *****/
 #second-page-nav #full-nav a,
 #second-page-nav #collapse-nav a {
     background: rgba(176, 143, 38, 0.7);
 }
 .case-study-wrapper {
-    margin: 3rem auto 5rem;
+    margin: 3rem auto;
     padding: 10px;
     max-width: 1200px;
 }
@@ -387,7 +424,7 @@ header h2 {
 }
 }
 
-@media screen and (max-width: 566px) {
+@media screen and (max-width: 600px) {
     #logo {
         max-width: 200px;
         position: absolute;
