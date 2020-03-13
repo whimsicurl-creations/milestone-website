@@ -44,6 +44,9 @@ h4 {
 p {
     font-size: 1.15em;
 }
+a {
+    color: var(--maincolor);
+}
 
 /* BANNER STYLES */
 .banner-text {
@@ -313,14 +316,18 @@ footer .third-width {
 .row > * {
     margin: 10px;
 }
-.row:nth-of-type(2n + 7) {
+.right {
     flex-direction: row-reverse;
+}
+.left {
+    flex-direction: row;
 }
 .row:nth-of-type(3) {
     justify-content: flex-start;
 }
 .row h2 {
     padding-top: 0;
+    text-align: left;
 }
 #mission-statement {
     width: 80%;
