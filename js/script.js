@@ -2,10 +2,11 @@
 let menu = document.getElementById('slideout');
 let toggleButton = document.getElementById('slideout-toggle');
 let closeButton = document.getElementById('slideout-close');
-let portfolioLink = document.querySelector('#portfolioLink');
-let aboutLink = document.querySelector('#aboutLink');
-let contactLink = document.querySelector('#contactLink');
-let caseStudiesLink = document.querySelector('#caseStudiesLink');
+let portfolioLink = document.getElementById('portfolioLink');
+let aboutLink = document.getElementById('aboutLink');
+let contactLink = document.getElementById('contactLink');
+let caseStudiesLink = document.getElementById('caseStudiesLink');
+//let copyright = document.getElementById('copyright-date');
 
 //show slideout menu when menu button is clicked
 toggleButton.addEventListener('click', function(e) {
@@ -35,3 +36,8 @@ aboutLink.addEventListener('click', function() {
 contactLink.addEventListener('click', function() {
     menu.classList.remove('onscreen');
 });
+
+//Keep copyright year current
+var todayDate = new Date();
+var thisYear = todayDate.getFullYear();
+document.getElementById('copyright-date').innerHTML = thisYear;
