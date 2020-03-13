@@ -45,6 +45,25 @@ p {
     font-size: 1.15em;
 }
 
+/* BANNER STYLES */
+.banner-text {
+    color: var(--textcolor);
+    font-weight: bold;
+    background-image: url('../img/teal-bg-horizontal.jpg');
+    padding: 10px 30px 10px 10px;
+    margin: 10px 0;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    border: 2px solid var(--accentcolor);
+    border-left: none;
+}
+.banner-text > * {
+    color: var(--textcolor);
+    font-weight: bold;
+}
+.banner-text p {
+    margin: 0;
+}
+
 /***** GRID *****/
 .full-width {
     width: 100%;
@@ -263,9 +282,9 @@ footer .third-width {
     background: rgba(176, 143, 38, 0.7);
 }
 .case-study-wrapper {
+    margin: 3rem auto 5rem;
+    padding: 10px;
     max-width: 1200px;
-    margin: 20px auto;
-    margin-bottom: 50px;
 }
 #case-study-headline {
     background-image: url('../img/teal-bg-horizontal.jpg');
@@ -300,11 +319,15 @@ footer .third-width {
 .row:nth-of-type(3) {
     justify-content: flex-start;
 }
+.row h2 {
+    padding-top: 0;
+}
 #mission-statement {
     width: 80%;
-    margin: 0 auto;
-    font-weight: bold;
-    color: var(--maincolor);
+    margin: 10px auto;
+    font-size: 1.25em;
+    line-height: 1.75;
+    padding: 10px 30px 10px 20px;
 }
 
 /* ================= MEDIA QUERIES =================== */
