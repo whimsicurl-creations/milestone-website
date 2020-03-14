@@ -288,13 +288,18 @@ footer .third-width {
 .cs-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .cs-element {
+    width: calc(100% / 3);
     max-width: 300px;
     display: grid;
     grid-template-columns: minmax(250px, 1fr);
     grid-gap: 10px;
+    margin-bottom: 50px;
+}
+.cs-element:not(:first-of-type) {
+    margin-left: 20px;
 }
 .cs-element h2,
 .cs-element h3,
@@ -314,6 +319,33 @@ footer .third-width {
 .cs-element a img {
     max-width: 275px;
     margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+    .cs-element {
+        width: 50%;
+        max-width: 400px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 839px) {
+    .cs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cs-element {
+        width: 90%;
+    }
+    .cs-element:not(:first-of-type) {
+        margin-left: 0;
+    }
+    .cs-element a img {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cs-element a img {
+        max-width: 250px;
+    }
 }
 
 /***** CASE STUDIES PAGES *****/
