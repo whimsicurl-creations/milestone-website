@@ -398,6 +398,9 @@ footer .third-width {
     padding-top: 0;
     text-align: left;
 }
+.cs-text-wrapper p:last-of-type {
+    margin-bottom: 0;
+}
 #mission-statement {
     width: 80%;
     margin: 10px auto;
