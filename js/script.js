@@ -6,7 +6,6 @@ let portfolioLink = document.getElementById('portfolioLink');
 let aboutLink = document.getElementById('aboutLink');
 let contactLink = document.getElementById('contactLink');
 let caseStudiesLink = document.getElementById('caseStudiesLink');
-//let copyright = document.getElementById('copyright-date');
 
 //show slideout menu when menu button is clicked
 toggleButton.addEventListener('click', function(e) {
