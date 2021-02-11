@@ -25,10 +25,11 @@ main {
     width: 100%;
 }
 h2 {
+    width: 100%;
     font-family: 'Merriweather', serif;
     font-size: 1.778em;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
     padding-top: 25px;
     color: var(--maincolor);
 }
@@ -214,6 +215,12 @@ header h2 {
     background-size: cover;
     padding: 3em 0;
 }
+#about .half-width {
+    max-width: 600px;
+}
+#about .half-width:first-of-type {
+    justify-content: flex-end;
+}
 #about h2,
 #about h3,
 #about p {
@@ -222,7 +229,7 @@ header h2 {
 #about img {
     margin: 25px 0;
     width: 100%;
-    max-width: 550px;
+    max-width: 350px;
     border: solid 3px var(--maincolor);
     border-radius: 10px;
 }
@@ -474,6 +481,9 @@ header h2 {
 /* ABOUT */
 #about .content-wrapper .half-width {
     width: 80%;
+}
+#about .half-width:first-of-type {
+    justify-content: center;
 }
 #about h3 {
     text-align: center;
