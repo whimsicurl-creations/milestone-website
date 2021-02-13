@@ -2,7 +2,8 @@
 let menu = document.getElementById('slideout');
 let toggleButton = document.getElementById('slideout-toggle');
 let closeButton = document.getElementById('slideout-close');
-let portfolioLink = document.getElementById('portfolioLink');
+let designPortfolioLink = document.getElementById('designPortfolioLink');
+let devPortfolioLink = document.getElementById('devPortfolioLink');
 let aboutLink = document.getElementById('aboutLink');
 let contactLink = document.getElementById('contactLink');
 let caseStudiesLink = document.getElementById('caseStudiesLink');
@@ -20,7 +21,11 @@ closeButton.addEventListener('click', function(e) {
 });
 
 //close menu when any link is clicked
-portfolioLink.addEventListener('click', function() {
+designPortfolioLink.addEventListener('click', function() {
+    menu.classList.remove('onscreen');
+});
+
+devPortfolioLink.addEventListener('click', function() {
     menu.classList.remove('onscreen');
 });
 

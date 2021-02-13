@@ -77,8 +77,8 @@ a {
     align-items: center;
 }
 .half-width {
-    width: 45%;
-    margin: 0 2%;
+    width: 44%;
+    margin: 0 3%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -179,18 +179,22 @@ header h2 {
 }
 
 /***** PORTFOLIO *****/
-#portfolio {
+#design-portfolio,
+#dev-portfolio {
     margin: 4em 3em;
 }
-#portfolio .content-wrapper {
+#design-portfolio .content-wrapper,
+#dev-portfolio .content-wrapper {
     flex-flow: row nowrap;
-    margin: 0.75em 0;
+    margin: 2.5em 0 3em;
     max-width: 1200px;
 }
-#portfolio .content-wrapper:nth-of-type(even) {
+#design-portfolio .content-wrapper:nth-of-type(even),
+#dev-portfolio .content-wrapper:nth-of-type(even) {
     flex-direction: row-reverse;
 }
-#portfolio h2 {
+#design-portfolio h2,
+#dev-portfolio h2 {
     margin: 1em auto;
     width: 100%;
 }
@@ -204,7 +208,7 @@ header h2 {
     border: solid 3px var(--maincolorlt);
     border-radius: 10px;
 }
-#portfolio a.case-study-link {
+#design-portfolio a.case-study-link {
     color: var(--maincolor);
     font-weight: bold;
 }
@@ -392,6 +396,12 @@ footer .third-width {
     padding: 10px;
     max-width: 1200px;
 }
+.case-study-wrapper > div {
+    padding: 2rem 0;
+}
+.case-study-wrapper .tight {
+    padding: 0;
+}
 #case-study-headline {
     background-image: url('../img/teal-bg-horizontal.jpg');
     background-size: cover;
@@ -432,6 +442,9 @@ footer .third-width {
     padding-top: 0;
     text-align: left;
 }
+.cs-text-wrapper {
+    margin: 2rem;
+}
 .cs-text-wrapper p:last-of-type {
     margin-bottom: 0;
 }
@@ -467,11 +480,13 @@ header h2 {
 }
 
 /* PORTFOLIO */
-#portfolio .content-wrapper {
+#design-portfolio .content-wrapper,
+#dev-portfolio .content-wrapper {
     display: flex;
     flex-direction: column;
 }
-#portfolio .content-wrapper:nth-of-type(even) {
+#design-portfolio .content-wrapper:nth-of-type(even),
+#dev-portfolio .content-wrapper:nth-of-type(even) {
     flex-direction: column;
 }
 .content-wrapper .half-width {
@@ -496,7 +511,7 @@ header h2 {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
     #logo {
         max-width: 200px;
         position: absolute;
