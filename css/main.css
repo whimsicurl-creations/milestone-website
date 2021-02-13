@@ -248,12 +248,9 @@ header h2 {
 #contact h2 {
     color: var(--bgcolor);
 }
-footer .content-wrapper .full-width {
-    justify-content: space-between;
-}
-footer .third-width {
-    flex: 1 25%;
-    margin: 0 2%;
+footer .content-wrapper {
+    justify-content: space-around;
+    max-width: 800px;
 }
 #contact h3,
 #contact h4 {
@@ -287,7 +284,7 @@ footer .third-width {
     color: var(--bgcolor);
     text-align: center;
     clear: both;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 /***** CASE STUDIES HOME PAGE *****/
