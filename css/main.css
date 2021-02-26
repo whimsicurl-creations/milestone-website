@@ -201,6 +201,10 @@ header h2 {
 .portfolio-text {
     padding-left: 10px;
 }
+.portfolio-text a {
+    font-weight: bold;
+    padding-right: 25px;
+}
 .portfolio-img img {
     margin: 25px 0;
     width: 100%;
