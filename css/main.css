@@ -232,7 +232,10 @@ header h2 {
 #about h2,
 #about h3,
 #about p {
-    color: var(--bgcolor);
+    color: var(--textcolor);
+}
+#about p {
+    font-weight: 600;
 }
 #about img {
     margin: 25px 0;
