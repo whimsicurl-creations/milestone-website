@@ -229,6 +229,13 @@ header h2 {
 #about .half-width:first-of-type {
     justify-content: flex-end;
 }
+#about img {
+    margin: 25px 0;
+    width: 100%;
+    max-width: 350px;
+    border: solid 3px var(--maincolor);
+    border-radius: 10px;
+}
 #about h2,
 #about h3,
 #about p {
@@ -240,13 +247,6 @@ header h2 {
 }
 #about p {
     font-weight: 600;
-}
-#about img {
-    margin: 25px 0;
-    width: 100%;
-    max-width: 350px;
-    border: solid 3px var(--maincolor);
-    border-radius: 10px;
 }
 
 /***** CONTACT *****/
